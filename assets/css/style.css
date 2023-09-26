@@ -1,0 +1,46 @@
+* {
+    font-family: 'Poiret One', cursive;
+}
+
+nav {
+    padding: 10px; 
+    grid-area: menu; 
+    background: #e4c1b3; 
+    color: white;
+} 
+
+main {
+    grid-area: seccion-principal;
+    padding: 10px; 
+}
+    
+footer {
+    grid-area: pie-de-pagina; 
+    background: #c6ccc7; 
+    color: white;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+div {
+    height: 100vh;
+    width: 100%;
+    display: grid; 
+    grid-template-rows: 1fr/*nav*/ 10fr/*principal*/ 1fr/*footer*/; 
+    grid-template-areas:
+       "menu"
+       "seccion-principal"
+       "pie-de-pagina";
+}
+
+@media (min-width: 992px) { 
+    div{
+    grid-template-areas: "menu seccion-principal" "menu seccion-principal" "menu pie-de-pagina";
+    grid-template-columns: 6rem 1fr; 
+    }
+}
