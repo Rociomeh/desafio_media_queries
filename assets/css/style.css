@@ -2,12 +2,34 @@
     font-family: 'Poiret One', cursive;
 }
 
+.filtros {
+    background-color: #c6ccc7;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 576px) { 
+    .filtros {
+    flex-direction: row;
+    justify-content: space-around; 
+    }
+}
+
 nav {
     padding: none;
     color: white; 
     background: #e4c1b3; 
     grid-template-areas: menu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 } 
+
+.logo {
+    margin-top: 50px;
+    cursor: pointer;
+}
 
 main {
     grid-template-areas: seccion-principal;
@@ -61,7 +83,7 @@ footer a {
 .container {
     height: 100vh;
     width: 100%;
-    display: grid; 
+    display: grid;
     grid-template-rows: 1fr/*nav*/ 10fr/*principal*/ 1fr/*footer*/; 
     grid-template-areas:
        "menu"
