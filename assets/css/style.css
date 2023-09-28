@@ -12,7 +12,7 @@
        "main"
        "footer";
     grid-template-rows: 60px/*nav*/ 60px/*filtros*/ 1fr/*principal*/ 60px/*footer*/; 
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -26,7 +26,7 @@
     padding: 5px;
 } 
 
-.nav-section > .logos {
+.nav-section > .logo {
     display: flex;
     gap: 5px;
 }
@@ -35,8 +35,9 @@
     display: none;
 }
 
-.logos {
-    width: 30px;
+.logo {
+    display: flex;
+    gap: 5px;
 }
 
 .filtros-section {
@@ -58,6 +59,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.main-section > .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 15px; 
     gap: 10px;
 }
@@ -72,8 +79,9 @@
     width: 220px; /* Ancho máximo de la tarjeta, ajusta según tus necesidades */
 }
 
-.main-section img {
-    width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+.card-container > .card > img {
+    width: 200px; /* Asegura que la imagen no sea más ancha que su contenedor */
+    height: 300px;
 }
 
 .main-section p {
@@ -97,6 +105,7 @@
     background-color: #e4c1b3;
     width: 30px;
     height: 30px;
+    border-radius: 3px;
 }
 
 .footer {
@@ -106,6 +115,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 footer a {
@@ -117,6 +127,7 @@ footer a {
     display: flex;
     justify-content: center;
     gap: 5px;
+    margin: 3px;
 }
 
 @media (min-width: 576px) { 
@@ -124,7 +135,7 @@ footer a {
         grid-template-areas:
            "nav filtros"
            "nav main"
-           "main footer";
+           "footer main";
         grid-template-columns: 150px 1fr;
         grid-template-rows: 60px 1fr 60px; 
     }
@@ -150,5 +161,8 @@ footer a {
     }
     .nav-section > .logos > h1 {
         text-align: center;
+    }
+    .nav-section > .bars {
+        display: none;
     }
 }
