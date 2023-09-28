@@ -10,61 +10,74 @@
     <title>Media Queries</title>
 </head>
 <body>
-    <section class="filtros">
-        <div>
-            <p>Ordenar por:</p>
-            <select class="opcion">
-                <option value="precio">Precio</option>
-                <option value="nombre">Nombre</option> 
-            </select>
-        </div>
-    </section>
     <div class="container">
-        <nav>
-            <div class="logo">
-                <i class="fa-solid fa-mug-saucer" style="color: #ffffff;"></i>
+        <nav class="nav-section">
+            <div class="logos">
+                <div class="logo">
+                    <i class="fa-solid fa-mug-saucer" style="color: #ffffff;"></i>
+                    <h1>Tasse</h1>
+                </div>
+                <div class="bars">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </div>
             </div>
-            <h2>Tasse</h2>
             <ul>
-                <p><strong>Inicio</strong></p>
-                <p><strong>Catálogo</strong></p>
-                <p><strong>Ofertas</strong></p>
-                <p><strong>Contacto</strong></p>
+                <li>Inicio</li>
+                <li>Ofertas</li>
+                <li>Catálogo</li>
             </ul>
         </nav> 
-        <main class="card">
-            <div>
-                <img src="assets/imgs/img1.jpg">
-                <p>Tasse Grafito
-                    <br>
-                    <button>Ver más</button>
-                </p>
+        <section class="filtros-section">
+            <span>Ordenar por:</span>
+            <select class="opcion">
+                <option>Precio</option> 
+            </select>
+        </section>
+        <main class="main-section">
+            <div class="card-container">
+                <div class="card">
+                    <img src="assets/imgs/img1.jpg" alt="taza">
+                    <span>Tasse Grafito</span>
+                        <br>
+                        <button>Ver más</button>
+                </div>
+                <div class="card">
+                    <img src="assets/imgs/img2.jpg" alt="taza">
+                    <span>Tasse Chocolate</span>
+                        <br>
+                        <button>Ver más</button>
+                </div>
+                <div class="card">
+                    <img src="assets/imgs/img3.jpg" alt="taza">
+                    <span>Tasse Conjunto</span>
+                        <br>
+                        <button>Ver más</button>
+                </div>
+                <div class="card">
+                    <img src="assets/imgs/img4.jpg" alt="taza">
+                    <span>Tasse Cream</span>
+                        <br>
+                        <button>Ver más</button>
+                </div>
             </div>
-            <div>
-                <img src="assets/imgs/img2.jpg">
-                <p>Tasse Chocolate
-                    <br>
-                    <button>Ver más</button>
-                </p>
-            </div>
-            <div>
-                <img src="assets/imgs/img3.jpg">
-                <p>Tasse Conjunto
-                    <br>
-                    <button>Ver más</button>
-                </p>
-            </div>
-            <div>
-                <img src="assets/imgs/img4.jpg">
-                <p>Tasse Cream
-                    <br>
-                    <button>Ver más</button>
-                </p>
+            <div class="navegador">
+                <button>...</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>...</button>
             </div>
         </main> 
-        <footer>
-            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>@tasse_</a>
-            <p>Todos los derechos reservados</p>
+        <footer class="footer">
+            <div>
+                <a href="https://www.facebook.com">
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.instagram.com">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <span>Todos los derechos reservados</span>
         </footer>
     </div>
 </body>
